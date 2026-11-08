@@ -24,4 +24,12 @@ elif mood == "bad":
         print("That's okay. We can talk about something else.")
 else:
     print("I see. Sometimes it's hard to put feelings into words.")
+    print("If you don't mind, can you tell me your hobbies if your mood is at ease? (yes/no) :")
+    mood = input()
+    if mood == "yes":
+        print("What are your hobbies? :")
+        hobbies = input()
+        print(f"Interesting! {hobbies} sounds like a fun activity.")
+    elif mood == "no":
+        print("That's okay. We can talk about something else.")
 print(f"It was nice chatting with you {name}. Goodbye!")
