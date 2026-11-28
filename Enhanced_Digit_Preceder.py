@@ -30,7 +30,7 @@ model.compile(optimizer='rmsprop',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-model.fit(datagen.flow(x_train, y_train, batch_size=32), epochs=1)
+model.fit(datagen.flow(x_train, y_train, batch_size=32), epochs=10)
 
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print(f"Test accuracy: {test_acc}")
